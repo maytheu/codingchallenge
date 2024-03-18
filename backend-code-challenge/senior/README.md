@@ -30,7 +30,7 @@ We have created unit tests for all the functionality you are require to implemen
 
 ## Installation
 
-Create (or reuse) a Gitlab account to fork this repository.
+Create (or reuse) a Github account to fork this repository.
 
 Clone your forked repository:
 
