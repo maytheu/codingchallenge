@@ -35,13 +35,25 @@ Create (or reuse) a Gitlab account to fork this repository.
 Clone your forked repository:
 
 ```sh
-git clone https://gitlab.com/<some-gitlab-username>/backend-code-challenge.git
+git clone https://github.com/toluconsultingllc/codingchallenge.git
 ```
 
 And then:
 
 ```sh
 cd backend-code-challenge
+```
+
+Choose Junior or Senior
+
+```sh
+cd junior
+```
+
+or 
+
+```sh
+cd senior
 ```
 
 Once the project is cloned, you will see two folders: `frontend` and `backend`, along with the `docker-compose.yml` file to spin up all the services.
