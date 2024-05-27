@@ -15,10 +15,15 @@ While this repo contains both the back and frontend of a project, in this case, 
 We would like you to implement:
 - Authorisation with API key coming on the `x-api-key` request header:
   - Description: The frontend currently makes calls to the backend using an API key but the backend is not validating it.
-  - To be implemented in the file: `backend/src/user/milestones/authorisation.js` 
+  - Implemented in the file: `backend/src/user/milestones/authorisation.js` 
+  - Get the api key from header
+  - Return error if api key is not found
 - User authentication with the use of the `x-slug` request header:
   - Description: This should allow the backend to identify the user based on the `slug` (identifier) to simulate that the user is logged in to the webpage. The `x-slug` header is expected to be base64 encoded and contain the `slug` (identifier) field of the user table. 
-  - To be implemented in the file: `backend/src/user/milestones/authentication.js`.
+  - Implemented in the file: `backend/src/user/milestones/authentication.js`.
+  - Get the slug from the header
+  - Convert from base to string
+  - modify the params with the string
 - Response data enrichment:
   - Description: The `favouritesDetails` property on the response should be populated with the characters details for each of the `favourites`. The frontend passes a character ID into the `favourites` array for each character, make use of that ID to call the SWAPI to fetch details about that character. For example, the 21 in the array should make a call to https://swapi.dev/api/people/21/.
   - To be implemented in the file: `backend/src/user/milestones/presentation.js`.
