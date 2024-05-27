@@ -26,7 +26,11 @@ We would like you to implement:
   - modify the params with the string
 - Response data enrichment:
   - Description: The `favouritesDetails` property on the response should be populated with the characters details for each of the `favourites`. The frontend passes a character ID into the `favourites` array for each character, make use of that ID to call the SWAPI to fetch details about that character. For example, the 21 in the array should make a call to https://swapi.dev/api/people/21/.
-  - To be implemented in the file: `backend/src/user/milestones/presentation.js`.
+  - Implemented in the file: `backend/src/user/milestones/presentation.js`.
+  - Get the favourites array from the context
+  - Return empty favouritesDetails if favourites is empty
+  - Loop over the favourites and make request based on id
+  - Update the afvouritesDetails
 - Integration tests:
   - Description: The frontend is already making use of some endpoints, such as `GET /users/me` and `PUT /users/me` and this way you can guarantees the contract is being kept.
   - To be implemented in the file: `backend/test/user.spec.js`.
